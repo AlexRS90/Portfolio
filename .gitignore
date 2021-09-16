@@ -5,3 +5,4 @@
 *.zip
 # .gitignore
 node_modules/
+.DS_Store
