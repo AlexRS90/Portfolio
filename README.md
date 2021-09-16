@@ -5,6 +5,7 @@
 ![screenshot](images/portfolioMainPage.png)
 
 In this project I made the main page's skeleton for the portfolio that will show all my future projects.
+This is the first milestone, and it is for mobile devices. 
 
 ## Built With
 
