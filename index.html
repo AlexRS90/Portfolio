@@ -8,11 +8,13 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <p>Alejandro Ramos</p>
-        <img src="images/IconMenu.png" alt="Three horizontal dashes button">
-    </header>
-    <main class="mainContain">
+    <!-- <div class="d-flex flex-center"> -->
+        <header class="header d-flex flex-center">
+            <a href="#">Alejandro Ramos</a>
+            <a class="burger" href="#"><img src="images/IconMenu.png" alt="burger button"></a>   
+        </header>
+    <!-- </div> -->
+    <section class="mainContain d-flex">
         <div class="informativeText">
             <h1>Hey There.<br>I'm Alex</h1>
             <h2>I’am a Software Developer</h2>
@@ -20,13 +22,35 @@
             don’t hestiate to contact me.</p>
         </div>
         <div class="socialIcons">
-             <img src="images/IconGitHub.png" alt="-GitHub button">
-             <img src="images/IconLinkedin.png" alt="Linkedin button">
-             <img src="images/IconAngelist.png" alt="Angelist button">
-             <img src="images/IconTwitter.png" alt="Twitter button">
-             <img src="images/IconMedium.png" alt="Medium button">
+            <ul class="d-flex">
+                <li>
+                    <a href="https://github.com/AlexRS90">
+                        <img src="images/IconGitHub.png" alt="-GitHub button">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/alejandro-ramos-santos-9b0b52135/">
+                        <img src="images/IconLinkedin.png" alt="Linkedin button">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/IconAngelist.png" alt="Angelist button">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/AlejandroRBenji">
+                        <img src="images/IconTwitter.png" alt="Twitter button">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/IconMedium.png" alt="Medium button">
+                    </a>
+                </li>
+            </ul>
         </div>        
-    </main>
+    </section>
     
 </body>
 </html>
