@@ -5,21 +5,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .header p {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   margin-left: 24px;
-
 }
 
 .header img {
   height: 24px;
   width: 24px;
   margin-right: 24px;
-
 }
 
 .mainContain {
@@ -31,14 +28,12 @@
   flex-direction: column;
   background-image: url("images/Illustration.png");
   background-repeat: no-repeat;
-  background-position:right bottom -45px;
-
+  background-position: right bottom -45px;
 }
 
 .informativeText {
   flex-direction: column;
   margin-left: 24px;
-
 }
 
 .informativeText h1 {
@@ -49,18 +44,15 @@
   font-size: 56px;
   margin-bottom: 12px;
   margin-top: 120px;
-
 }
 
 .informativeText h2 {
   color: #fff5e1;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
-  font-weight: 700px;
   line-height: 32px;
   margin-bottom: 12px;
   margin-right: 24px;
-
 }
 
 .informativeText p {
@@ -68,7 +60,6 @@
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 24px;
-
 }
 
 .socialIcons {
@@ -79,5 +70,4 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-
 }
