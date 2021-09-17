@@ -1,13 +1,19 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
 .header {
   background-color: #3c3a39;
   height: 48px;
-  width: 375px;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex: 1;
 }
 
-.header p {
+.header a {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   margin-left: 24px;
@@ -16,28 +22,25 @@
 .header img {
   height: 24px;
   width: 24px;
-  margin-right: 24px;
+  margin-right: 32px;
 }
 
 .mainContain {
   background-color: #1c1a19;
   height: 590px;
-  width: 375px;
   top: 92px;
-  display: flex;
-  flex-direction: column;
   background-image: url("images/Illustration.png");
   background-repeat: no-repeat;
   background-position: right bottom -45px;
+  flex: 1;
+  flex-direction: column;
 }
 
 .informativeText {
-  flex-direction: column;
   margin-left: 24px;
 }
 
 .informativeText h1 {
-  display: flex;
   color: #ff6b00;
   font-family: 'Crete Round', serif;
   font-weight: 400;
@@ -62,12 +65,11 @@
   line-height: 24px;
 }
 
-.socialIcons {
+.socialIcons ul {
+  list-style: none;
   width: 200px;
   height: 40px;
   margin-left: 24px;
   margin-bottom: 120px;
-  display: flex;
-  align-items: center;
   justify-content: space-around;
 }
