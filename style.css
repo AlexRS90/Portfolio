@@ -88,7 +88,7 @@
   grid-gap: 24px;
 }
 
-.backGroundImg{
+.backGroundImg {
   background-image: url("images/imgworks.png");
   background-repeat: no-repeat;
 }
@@ -165,7 +165,6 @@
 .buttonProperties {
   width: 327px;
   height: 48px;
-  /* padding-top: 10px; */
 }
 
 .grid4 h2 {
@@ -204,8 +203,6 @@
 }
 
 .buttonProperties {
-  width: 327px;
-  height: 48px;
   padding-top: 10px;
 }
 
@@ -244,12 +241,6 @@
   align-items: flex-start;
 }
 
-.buttonProperties {
-  width: 327px;
-  height: 48px;
-  padding-top: 10px;
-}
-
 .grid6 h2 {
   font-family: 'Crete Round', serif;
   font-size: 32px;
@@ -283,12 +274,6 @@
   padding-left: 0%;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.buttonProperties {
-  width: 327px;
-  height: 48px;
-  padding-top: 10px;
 }
 
 .grid7 h2 {
@@ -326,12 +311,6 @@
   align-items: flex-start;
 }
 
-.buttonProperties {
-  width: 327px;
-  height: 48px;
-  padding-top: 10px;
-}
-
 .grid8 h2 {
   font-family: 'Crete Round', serif;
   font-size: 32px;
@@ -367,12 +346,6 @@
   align-items: flex-start;
 }
 
-.buttonProperties {
-  width: 327px;
-  height: 48px;
-  padding-top: 10px;
-}
-
 .aboutMe {
   background-color: #1c1a19;
   margin-top: 120px;
@@ -384,7 +357,7 @@
 .bottom {
   flex: 1;
   align-items: flex-start;
-  margin-left: 24px; 
+  margin-left: 24px;
   flex-direction: column;
 }
 
@@ -400,7 +373,6 @@
   font-size: 16px;
   font-family: 'Inter', sans-serif;
   margin-bottom: 24px;
-  margin-top: 0px;
 }
 
 .line2 {
@@ -426,9 +398,9 @@
 .lan {
   list-style-image: url("images/Rectangle55.png");
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 32px;  
+  font-size: 32px;
 }
 
 .frame {
