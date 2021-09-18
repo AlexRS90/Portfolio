@@ -165,6 +165,7 @@
 .buttonProperties {
   width: 327px;
   height: 48px;
+  padding-top: 10px;
 }
 
 .grid4 h2 {
@@ -200,10 +201,6 @@
   padding-left: 0%;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.buttonProperties {
-  padding-top: 10px;
 }
 
 .grid5 h2 {
