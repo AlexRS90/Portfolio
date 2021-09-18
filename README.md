@@ -4,8 +4,9 @@
 
 ![screenshot](images/portfolioMainPage.png)
 
-In this project I made the main page's skeleton for the portfolio that will show all my future projects.
-This is the first milestone, and it is for mobile devices. 
+- In this project I made the main page's skeleton for the portfolio that will show all my future projects.
+  This is the first milestone, and it is for mobile devices. 
+- For second milestone I added two more sections, called works and about me. Works section was built with CSS Grid and Flexbox.
 
 ## Built With
 
