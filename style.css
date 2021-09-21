@@ -451,9 +451,11 @@
   padding: 0 24px;
   text-align: center;
 }
+
 .form {
   width: 85%;
 }
+
 .form fieldset {
   display: flex;
   flex-direction: column;
