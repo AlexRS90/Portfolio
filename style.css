@@ -31,7 +31,7 @@
   background-color: #1c1a19;
   height: 590px;
   top: 92px;
-  background-image: url("images/Illustration.png");
+  background-image: url('images/Illustration.png');
   background-repeat: no-repeat;
   background-position: right bottom -45px;
   flex: 1;
@@ -89,7 +89,7 @@
 }
 
 .backGroundImg {
-  background-image: url("images/imgworks.png");
+  background-image: url('images/imgworks.png');
   background-repeat: no-repeat;
 }
 
@@ -346,7 +346,7 @@
 .aboutMe {
   background-color: #1c1a19;
   margin-top: 120px;
-  background-image: url("images/bottomImg.png");
+  background-image: url('images/bottomImg.png');
   background-repeat: no-repeat;
   background-position: right bottom 25px;
 }
@@ -393,7 +393,7 @@
 }
 
 .lan {
-  list-style-image: url("images/Rectangle55.png");
+  list-style-image: url('images/Rectangle55.png');
   flex-direction: column;
   align-items: center;
   font-family: 'Poppins', sans-serif;
@@ -401,13 +401,13 @@
 }
 
 .frame {
-  list-style-image: url("images/Rectangle56.png");
+  list-style-image: url('images/Rectangle56.png');
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
 }
 
 .ski {
-  list-style-image: url("images/Rectangle57.png");
+  list-style-image: url('images/Rectangle57.png');
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
 }
@@ -431,4 +431,93 @@
   font-family: 'Inter', sans-serif;
   font-size: 22px;
   line-height: 32px;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.footer p {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  color: #172b4d;
+  font-weight: 700;
+  line-height: 44px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.form {
+  width: 85%;
+}
+
+.form fieldset {
+  display: flex;
+  flex-direction: column;
+  height: 330px;
+  justify-content: space-between;
+  border: 0;
+  width: inherit;
+}
+
+.form fieldset > * {
+  height: 42px;
+  padding: 12px;
+  border: 0;
+  border-bottom: 1px solid #dbd8d7;
+  width: 100%;
+}
+
+.form fieldset ::placeholder {
+  color: #979493;
+  font-family: 'Inter', sans-serif;
+  background: #fbf8f7;
+  height: 100%;
+}
+
+.form fieldset textarea {
+  background-color: #fbf8f7;
+  height: 114px;
+  border: 0;
+}
+
+.btnPrimary {
+  width: 131px;
+  height: 48px;
+  padding: 12px;
+  background-color: #ff6b00;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  border: 0;
+  line-height: 24px;
+}
+
+.submit-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 124px;
+}
+
+.btnPrimary:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.btnPrimary:active {
+  background-color: #e05304;
+}
+
+.btnPrimary[disabled] {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: 0;
 }
