@@ -109,12 +109,15 @@
   font-family: 'Inter', sans-serif;
   border: 0;
   line-height: 24px;
+  transition: transform 300ms ease-in;
 }
 
 .btnPrimary:hover {
   background-color: #fff5e1;
   color: #f55800;
   border: 1px solid #f55800;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .btnPrimary:active {
@@ -380,9 +383,14 @@
   border: 0;
   border-bottom: 1px solid #dbd8d7;
   width: 100%;
+  transition: padding-left 300ms ease-in;
 }
 
-.form fieldset::placeholder {
+.form fieldset > *:hover {
+  padding-left: calc(12px + 5px);
+}
+
+.form fieldset::placeholder:hover {
   color: #979493;
   font-family: 'Inter', sans-serif;
   background: #fbf8f7;
@@ -517,7 +525,7 @@
     align-items: center;
     font-size: 40px;
     width: 100%;
-    grid-column: 1/span 3;
+    grid-column: 1 / span 3;
     color: #091e42;
     height: 25%;
   }
@@ -529,7 +537,7 @@
 
   .grid2 {
     flex-direction: row;
-    grid-column: 1/span 3;
+    grid-column: 1 / span 3;
     justify-content: left;
     margin-bottom: 24px;
   }
@@ -543,10 +551,6 @@
   .yogaInfo h2 {
     margin-top: 0;
   }
-
-  /* .alingButton {
-    visibility: hidden;
-  } */
 
   .imgBckGrnd1 {
     background-image: url('images/imgGrid1.png');
