@@ -16,7 +16,7 @@
 - Visual Studio Code
 - Linters
 
-## Live Demo
+## Live Demo 🖥️ 💻 📱
 
 https://alexrs90.github.io/Portfolio/
 
