@@ -48,3 +48,7 @@ Give a ⭐️ if you like this project!
 
 - GitHub: [@Amrhub](https://github.com/Amrhub/)
 - LinkedIn: [Amr Ahmed](https://www.linkedin.com/in/amr-ahmed-655420191/)
+
+👤 **Anibal Amoroso**
+
+- GitHub: [@sj1978](https://github.com/sj1978)
