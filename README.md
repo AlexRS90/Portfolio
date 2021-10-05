@@ -9,12 +9,14 @@
 - For second milestone I added two more sections, called works and about me. Works section was built with CSS Grid and Flexbox.
 - For third milestone I added form contact with my coding partner via "Pair Programming" session.
 - For fourth milestone I create the desktop version frome the same code, making it responsive. 
+- For this milestone I added the mobile menu, it works properly and takes you to the selected section.
 
 ## Built With
 
 - HTML & CSS
 - Visual Studio Code
 - Linters
+- Javascript
 
 ## Live Demo 🖥️ 💻 📱
 
@@ -43,12 +45,17 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
-- Contributor
+- Contributors:
+
   👤 **Amr Ahmed**
 
 - GitHub: [@Amrhub](https://github.com/Amrhub/)
 - LinkedIn: [Amr Ahmed](https://www.linkedin.com/in/amr-ahmed-655420191/)
 
-👤 **Anibal Amoroso**
+  👤 **Anibal Amoroso**
 
 - GitHub: [@sj1978](https://github.com/sj1978)
+
+  👤 **Abel Herrera**
+
+- GitHub: [@Lino09](https://github.com/Lino09)

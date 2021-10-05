@@ -2,6 +2,10 @@
   display: flex;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .flex-center {
   align-items: center;
   justify-content: center;
@@ -9,33 +13,24 @@
 
 .header {
   background-color: #3c3a39;
-  height: 48px;
   justify-content: space-between;
-  flex: 1;
-  flex-wrap: wrap;
+  align-items: center;
+  padding: 24px 24px;
 }
 
 .header a {
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  margin-left: 24px;
   text-decoration: none;
 }
 
 .burger {
   height: 24px;
   width: 24px;
-  text-align: end;
-  margin-right: 32px;
-}
-
-.break {
-  flex-basis: 100%;
-  height: 0;
 }
 
 .topMenu {
-  visibility: hidden;
+  display: none;
   width: 255px;
 }
 
@@ -428,32 +423,71 @@
   padding: 0;
 }
 
+.menu-hidden {
+  display: none;
+}
+
+#mobile-menu {
+  background-color: #3c3a39;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 108px 0;
+}
+
+#mobile-menu ul {
+  list-style: none;
+  padding: 0 28px;
+  margin: 0;
+}
+
+#mobile-menu button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 62px;
+  right: 38px;
+}
+
+.menu-item {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid #fff5e1;
+  padding: 15px;
+  margin-top: 14px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
 @media (min-width: 1024px) {
   .header {
     background-color: #3c3a39;
-    height: 72px;
     justify-content: space-between;
     flex-wrap: nowrap;
+    padding: 24px 154px;
   }
 
   .name {
     font-family: 'Inter', sans-serif !important;
     font-size: 20px;
     font-weight: 700;
-    margin-left: 154px !important;
     text-align: center;
   }
 
   .burger {
-    visibility: hidden;
+    display: none;
   }
 
   .topMenu {
-    width: 255px;
-    height: 40px;
-    margin-right: 151px;
-    visibility: visible;
+    display: flex;
     align-items: center;
+    justify-content: flex-end;
+    width: 50%;
   }
 
   .topMenu ul {
@@ -466,6 +500,7 @@
     font-weight: 600;
     font-size: 15px;
     width: fit-content;
+    margin: 0 24px;
   }
 
   .mailIcon {
@@ -512,7 +547,6 @@
   }
 
   .grid {
-    width: auto;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     margin-left: 5%;
