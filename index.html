@@ -76,7 +76,7 @@
                 </ul>
             </div>        
         </section>
-        <section class="works">
+        <section class="works" id="myProjects">
             <div class="grid">
                 <div class="gridItem grid1 d-flex flex-center">
                     <p>My Recent Works</p>
@@ -262,7 +262,7 @@
             </div>
 
         </section>
-        <section class="aboutMe">
+        <section class="aboutMe" id="about-me">
             <div class="d-flex bottom flex-center">
                 <h2>About me</h2>
                 <p>Hello I’m a software developer! I can help<br> 
@@ -311,7 +311,7 @@
         </section>
     </main>
     <footer>
-        <section class="footer d-flex flex-center">
+        <section class="footer d-flex flex-center" id="contact-me">
             <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
             <form class="form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqyrpzk" method="post">
                 <fieldset id="fs-frm-inputs">
@@ -357,15 +357,16 @@
             </div>     
         </nav>
     </footer>
-    <div id="mobile-menu">
+    <div id="mobile-menu" class="menu-hidden">
         <ul>
-            <li class="menu-item"><a href="#">Portfolio</a></li>
-            <li class="menu-item"><a href="#">About</a></li>
-            <li class="menu-item"> <a href="#"> Contact</a></li>
+            <li class="menu-item"><a href="#myProjects">Portfolio</a></li>
+            <li class="menu-item"><a href="#about-me">About</a></li>
+            <li class="menu-item"> <a href="#contact-me"> Contact</a></li>
         </ul>
-        <button>
+        <button class="burger">
             <img src="./images/IconCancel.png" alt="Close menu">
         </button>
     </div>
 </body>
+<script src="events.js"></script>
 </html>
