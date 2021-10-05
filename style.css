@@ -464,6 +464,98 @@ html {
   color: #fff5e1;
 }
 
+.pop-up-main {
+  /* display: none; */
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px) brightness(50%);
+  padding-top: 50px;
+  overflow-y: auto;
+}
+
+.float-window {
+  width: 80%;
+  background-color: #fff;
+  flex-direction: column;
+  position: relative;
+  padding: 24px 4px;
+  padding-left: 16px;
+  margin-bottom: 30px;
+}
+
+.float-window h2 {
+  color: #172b4d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.close-pop-up {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.float-window ul {
+  list-style: none;
+  width: 80%;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.second-div-pop-up {
+  flex-direction: column; 
+}
+
+.second-div-pop-up img {
+  max-width: 95%;
+  height: auto;
+}
+
+.third-div-pop-up {
+  flex-direction: column;
+}
+
+.third-div-pop-up p {
+  font-family: 'Inter', sans-serif;
+  size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+  margin-right: 16px;
+}
+
+.img-button-1 {
+  width: 134px;
+  background-image: url(images/IconLive.png);
+  background-repeat: no-repeat;
+  background-position-x: 102px;
+  background-position-y: center;
+  padding-left: 12px;
+  text-align: left;
+}
+
+.img-button-2 {
+  width: 160px;
+  background-image: url(images/IconGithubWhite.png);
+  background-repeat: no-repeat;
+  background-position-x: 126px;
+  background-position-y: center;
+  padding-left: 12px;
+  text-align: left;
+}
+
+.img-button-2:hover {
+  background-image: url(images/IconGitHubBottom.png);
+}
+
 @media (min-width: 1024px) {
   .header {
     background-color: #3c3a39;
@@ -684,5 +776,35 @@ html {
 
   .sBottomNav {
     justify-content: center;
+  }
+  
+  .close-pop-up {
+    top: 38px;
+    right: 38px;
+  }
+  
+  .float-window ul {
+    width: 20%;
+    justify-content: space-between;
+    padding: 0;
+  }
+  
+  .second-div-pop-up {
+    flex-direction: row; 
+  }
+  
+  .second-div-pop-up img {
+    width: 660px;
+    height: 448px;
+  }
+
+  .third-div-pop-up {
+    padding-left: 25px;
+    margin-top: 0;
+    justify-content: space-between;
+  }
+  
+  .third-div-pop-up p {
+    line-height: 30px;
   }
 }
