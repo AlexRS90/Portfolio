@@ -2,6 +2,10 @@
   display: flex;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .flex-center {
   align-items: center;
   justify-content: center;
@@ -420,6 +424,10 @@
   padding: 0;
 }
 
+.menu-hidden {
+  display: none;
+}
+
 #mobile-menu {
   background-color: #3C3A39;
   position: fixed;
@@ -427,7 +435,6 @@
   width: 100%;
   height: 100vh;
   padding: 108px 0px;
-  display: none;
 }
 
 #mobile-menu ul {
@@ -543,7 +550,6 @@
   }
 
   .grid {
-    width: auto;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     margin-left: 5%;
