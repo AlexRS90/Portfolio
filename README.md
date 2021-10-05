@@ -43,12 +43,17 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
-- Contributor
+- Contributors:
+
   👤 **Amr Ahmed**
 
 - GitHub: [@Amrhub](https://github.com/Amrhub/)
 - LinkedIn: [Amr Ahmed](https://www.linkedin.com/in/amr-ahmed-655420191/)
 
-👤 **Anibal Amoroso**
+  👤 **Anibal Amoroso**
 
 - GitHub: [@sj1978](https://github.com/sj1978)
+
+  👤 **Abel Herrera**
+
+- GitHub: [@Lino09](https://github.com/Lino09)
