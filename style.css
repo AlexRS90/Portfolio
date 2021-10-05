@@ -424,7 +424,7 @@ html {
 }
 
 .menu-hidden {
-  display: none;
+  display: none !important;
 }
 
 #mobile-menu {
