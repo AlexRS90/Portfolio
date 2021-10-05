@@ -565,7 +565,7 @@ html {
   }
 
   .grid1 img {
-    width: 794px;
+    width: 70%;
     margin-left: 24px;
   }
 
@@ -586,53 +586,32 @@ html {
     margin-top: 0;
   }
 
-  .imgBckGrnd1 {
-    background-image: url('images/imgGrid1.png');
-    background-repeat: no-repeat;
-    background-size: 369px 435px;
-  }
-
-  .imgBckGrnd1 h2 {
-    visibility: hidden;
-  }
-
-  .imgBckGrnd1 p {
-    visibility: hidden;
-  }
-
-  .imgBckGrnd1 ul {
-    visibility: hidden;
-  }
-
-  .imgBckGrnd1 div input {
-    visibility: visible;
-  }
-
   .alingButton {
-    width: 369px !important;
+    width: 100%;
     margin-bottom: 0;
+  }
+
+  .buttonProperties {
+    width: 95.5%;
   }
 
   .grid3 div {
     visibility: hidden;
   }
 
-  .imgBckGrnd2 {
-    background-image: url('images/imgGrid2.png');
+  .grid3:hover {
+    background-image: url('images/imgGrid1.png');
     background-repeat: no-repeat;
-    background-size: 369px 435px;
   }
 
-  .imgBckGrnd3 {
-    background-image: url('images/imgGrid3.png');
-    background-repeat: no-repeat;
-    background-size: 369px 435px;
+  .grid3:hover h2, .grid3:hover p, .grid3:hover ul {
+    visibility: hidden;
   }
 
-  .imgBckGrnd4 {
-    background-image: url('images/imgGrid4.png');
-    background-repeat: no-repeat;
-    background-size: 369px 435px;
+  .grid3:hover div {
+    visibility: visible;
+    position: relative;
+    bottom: 0;
   }
 
   .aboutMe {
