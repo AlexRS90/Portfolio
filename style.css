@@ -29,7 +29,6 @@ html {
   width: 24px;
 }
 
-
 .topMenu {
   display: none;
   width: 255px;
@@ -429,19 +428,18 @@ html {
 }
 
 #mobile-menu {
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   position: fixed;
   top: 0;
   width: 100%;
   height: 100vh;
-  padding: 108px 0px;
+  padding: 108px 0;
 }
 
 #mobile-menu ul {
   list-style: none;
   padding: 0 28px;
   margin: 0;
-
 }
 
 #mobile-menu button {
@@ -455,7 +453,7 @@ html {
 .menu-item {
   font-size: 32px;
   font-weight: 700;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   border-bottom: 1px solid #fff5e1;
   padding: 15px;
   margin-top: 14px;
@@ -463,7 +461,7 @@ html {
 
 .menu-item a {
   text-decoration: none;
-  color:#fff5e1;
+  color: #fff5e1;
 }
 
 @media (min-width: 1024px) {
@@ -495,7 +493,6 @@ html {
   .topMenu ul {
     list-style: none;
     justify-content: space-around;
-    
   }
 
   .topMenu ul a {
