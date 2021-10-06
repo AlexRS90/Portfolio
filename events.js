@@ -1,27 +1,27 @@
 const projects = [{
-    title: 'Number around the internet',
-    img: 'images/SnapsPortfolio.png',
-    description: 'Man request adapted spirits set pressed. Up to denoting subjects sensible feelings it indulged directly. We dwelling elegance do shutters appetite yourself diverted. Our next drew much you with rank. Tore many held age hold rose than our. She literature sentiments any contrasted. Set aware joy sense young now tears china shy.',
-    listOfTechnologies: ['HTML', 'Bootstrap', 'Ruby'],
-    liveUrl: 'https://alexrs90.github.io/Portfolio/',
-    githubUrl: 'https://www.github.com/AlexRS90/Portfolio',
-  },
-  {
-    title: 'Multi-Post Stories',
-    img: 'images/yogaDesktop.png',
-    description: 'Up maids me an ample stood given. Certainty say suffering his him collected intention promotion. Hill sold ham men made lose case. Views abode law heard jokes too. Was are delightful solicitude discovered collecting man day. Resolving neglected sir tolerably but existence conveying for. Day his put off unaffected literature partiality inhabiting.',
-    listOfTechnologies: ['HTML', 'Bootstrap', 'Ruby'],
-    liveUrl: 'https://alexrs90.github.io/Portfolio/',
-    githubUrl: 'https://www.github.com/AlexRS90/Portfolio',
-  },
-  {
-    title: 'School Web Page',
-    img: 'images/thumpnailTemplate.png',
-    description: 'Arrival entered an if drawing request. How daughters not promotion few knowledge contented. Yet winter law behind number stairs garret excuse. Minuter we natural conduct gravity if pointed oh no. Am immediate unwilling of attempted admitting disposing it. Handsome opinions on am at it ladyship. ',
-    listOfTechnologies: ['HTML', 'Bootstrap', 'Ruby'],
-    liveUrl: 'https://alexrs90.github.io/Portfolio/',
-    githubUrl: 'https://www.github.com/AlexRS90/Portfolio',
-  },
+  title: 'Number around the internet',
+  img: 'images/SnapsPortfolio.png',
+  description: 'Man request adapted spirits set pressed. Up to denoting subjects sensible feelings it indulged directly. We dwelling elegance do shutters appetite yourself diverted. Our next drew much you with rank. Tore many held age hold rose than our. She literature sentiments any contrasted. Set aware joy sense young now tears china shy.',
+  listOfTechnologies: ['HTML', 'Bootstrap', 'Ruby'],
+  liveUrl: 'https://alexrs90.github.io/Portfolio/',
+  githubUrl: 'https://www.github.com/AlexRS90/Portfolio',
+},
+{
+  title: 'Multi-Post Stories',
+  img: 'images/yogaDesktop.png',
+  description: 'Up maids me an ample stood given. Certainty say suffering his him collected intention promotion. Hill sold ham men made lose case. Views abode law heard jokes too. Was are delightful solicitude discovered collecting man day. Resolving neglected sir tolerably but existence conveying for. Day his put off unaffected literature partiality inhabiting.',
+  listOfTechnologies: ['HTML', 'Bootstrap', 'Ruby'],
+  liveUrl: 'https://alexrs90.github.io/Portfolio/',
+  githubUrl: 'https://www.github.com/AlexRS90/Portfolio',
+},
+{
+  title: 'School Web Page',
+  img: 'images/thumpnailTemplate.png',
+  description: 'Arrival entered an if drawing request. How daughters not promotion few knowledge contented. Yet winter law behind number stairs garret excuse. Minuter we natural conduct gravity if pointed oh no. Am immediate unwilling of attempted admitting disposing it. Handsome opinions on am at it ladyship. ',
+  listOfTechnologies: ['HTML', 'Bootstrap', 'Ruby'],
+  liveUrl: 'https://alexrs90.github.io/Portfolio/',
+  githubUrl: 'https://www.github.com/AlexRS90/Portfolio',
+},
 ];
 
 for (let i = 0; i <= 1; i += 1) {
@@ -79,7 +79,6 @@ function popupVisibility(evt) {
 popupCloser.addEventListener('click', popupVisibility);
 popupToggle.forEach((item) => item.addEventListener('click', popupVisibility));
 
-
 // FORM Validation Logic
 
 const contactForm = document.querySelector('#contact-form');
@@ -90,7 +89,7 @@ contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
   errors.innerHTML = '';
   errors.classList.add('menu-hidden');
-  let emailValue = email.value;
+  const emailValue = email.value;
   if (emailValue === emailValue.toLowerCase()) {
     contactForm.submit();
   } else {
