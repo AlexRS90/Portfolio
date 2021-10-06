@@ -135,7 +135,7 @@ html {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 24px;
 }
 
@@ -438,6 +438,13 @@ html {
   padding: 108px 0;
 }
 
+.float-window ul {
+  list-style: none;
+  width: 80%;
+  justify-content: space-between;
+  padding: 0;
+}
+
 #mobile-menu ul {
   list-style: none;
   padding: 0 28px;
@@ -505,15 +512,8 @@ html {
   right: 30px;
 }
 
-.float-window ul {
-  list-style: none;
-  width: 80%;
-  justify-content: space-between;
-  padding: 0;
-}
-
 .second-div-pop-up {
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .second-div-pop-up img {
@@ -527,7 +527,7 @@ html {
 
 .third-div-pop-up p {
   font-family: 'Inter', sans-serif;
-  size: 16px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #344563;
@@ -679,7 +679,7 @@ html {
     margin-right: 24px;
   }
 
-  .yogaInfo{
+  .yogaInfo {
     width: 100%;
   }
 
@@ -709,7 +709,43 @@ html {
     background-repeat: no-repeat;
   }
 
-  .grid3:hover h2, .grid3:hover p, .grid3:hover ul {
+  .bottom p {
+    color: #f4f5f7;
+    font-size: 20px;
+    margin-bottom: 24px;
+    margin-top: 0;
+  }
+
+  .skills div {
+    flex-direction: row;
+  }
+
+  .footer p {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    width: 455px;
+    height: 256px;
+    flex-basis: 40%;
+  }
+
+  .sBottomNav ul {
+    flex-direction: row;
+  }
+
+  .float-window ul {
+    width: 20%;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .third-div-pop-up p {
+    line-height: 30px;
+  }
+
+  .grid3:hover h2, 
+  .grid3:hover p, 
+  .grid3:hover ul {
     visibility: hidden;
   }
 
@@ -734,23 +770,12 @@ html {
     visibility: visible;
   }
 
-  .bottom p {
-    color: #f4f5f7;
-    font-size: 20px;
-    margin-bottom: 24px;
-    margin-top: 0;
-  }
-
   .line2 {
     margin-top: 209px;
     margin-bottom: 16px;
     margin-left: 142px;
     width: 1156px;
     height: 1px;
-  }
-
-  .skills div {
-    flex-direction: row;
   }
 
   .language {
@@ -765,15 +790,6 @@ html {
     margin-bottom: 0;
   }
 
-  .footer p {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 52px;
-    width: 455px;
-    height: 256px;
-    flex-basis: 40%;
-  }
-
   .form {
     flex-basis: 60%;
   }
@@ -783,10 +799,6 @@ html {
     margin-left: 12px;
   }
 
-  .sBottomNav ul {
-    flex-direction: row;
-  }
-
   .sBottomNav {
     justify-content: center;
   }
@@ -794,12 +806,6 @@ html {
   .close-pop-up {
     top: 38px;
     right: 38px;
-  }
-  
-  .float-window ul {
-    width: 20%;
-    justify-content: space-between;
-    padding: 0;
   }
   
   .second-div-pop-up {
@@ -815,9 +821,5 @@ html {
     padding-left: 25px;
     margin-top: 0;
     justify-content: space-between;
-  }
-  
-  .third-div-pop-up p {
-    line-height: 30px;
   }
 }
