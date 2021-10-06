@@ -1,5 +1,4 @@
-const projects = [
-  {
+const projects = [{
     title: 'Number around the internet',
     img: 'images/SnapsPortfolio.png',
     description: 'Man request adapted spirits set pressed. Up to denoting subjects sensible feelings it indulged directly. We dwelling elegance do shutters appetite yourself diverted. Our next drew much you with rank. Tore many held age hold rose than our. She literature sentiments any contrasted. Set aware joy sense young now tears china shy.',
@@ -45,7 +44,6 @@ const popupWindow = document.querySelector('.pop-up-main');
 const popupCloser = document.querySelector('.close-pop-up');
 const popupTitle = document.querySelector('.pop-up-title');
 const popupText = document.querySelector('.pop-up-text');
-const popupOpener = document.querySelector('.buttonOpener');
 
 function check() {
   mobileMenu.classList.toggle('menu-hidden');
@@ -80,7 +78,26 @@ function popupVisibility(evt) {
 
 popupCloser.addEventListener('click', popupVisibility);
 popupToggle.forEach((item) => item.addEventListener('click', popupVisibility));
-popupOpener.addEventListener('click', popupVisibility);
+
+
+// FORM Validation Logic
+
+const contactForm = document.querySelector('#contact-form');
+const email = document.querySelector('#email-address');
+const errors = document.querySelector('.errors');
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  errors.innerHTML = '';
+  errors.classList.add('menu-hidden');
+  let emailValue = email.value;
+  if (emailValue === emailValue.toLowerCase()) {
+    contactForm.submit();
+  } else {
+    errors.innerHTML += `<li>The ${email.name} field has to be lowercase.</li>`;
+    errors.classList.remove('menu-hidden');
+  }
+});
 
 window.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && (popupWindow.classList.contains('menu-hidden') === false)) {
