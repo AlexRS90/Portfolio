@@ -126,77 +126,35 @@ html {
   border: 0;
 }
 
-.alingButton {
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
+.work-title {
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  color: #091e42;
+  height: 25%;
+  margin-top: 120px;
   margin-bottom: 24px;
+  flex-direction: column;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
+  width: 100%;
   grid-gap: 24px;
-}
-
-.gridItem {
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 24px;
+  justify-items: center;
 }
 
 .backGroundImg {
   background-image: url('images/imgworks.png');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.grid1 {
-  font-family: 'Crete Round', serif;
-  font-size: 40px;
-  margin-top: 120px;
-  margin-bottom: 24px;
-}
-
-.grid2 {
-  flex-direction: column;
-}
-
-.yogaInfo {
-  flex-direction: column;
-}
-
-.yogaImage {
-  width: 327px;
-  height: 237px;
-}
-
-.yogaInfo h2 {
-  font-family: 'Crete Round', serif;
-  font-size: 32px;
-  margin-top: 24px;
-  margin-bottom: 0%;
-  color: #091e42;
-}
-
-.yogaInfo p {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-top: 12px;
-  margin-bottom: 0%;
-  color: #091e42;
-}
-
-.yogaInfo ul {
-  width: 297px;
-  list-style: none;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-right: 12px;
-  padding-left: 0%;
-  justify-content: space-between;
-  align-items: flex-start;
+.grid3 {
+  position: relative;
+  width: 350px;
+  height: auto;
+  padding-bottom: 50px;
 }
 
 .grid3 h2 {
@@ -205,10 +163,10 @@ html {
   line-height: 44px;
   font-weight: 400;
   color: #fff;
-  margin-top: 84px;
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 0%;
+  height: 70px;
 }
 
 .grid3 p {
@@ -235,8 +193,10 @@ html {
 }
 
 .buttonProperties {
-  width: 327px;
-  height: 48px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
 }
 
 .aboutMe {
@@ -424,7 +384,7 @@ html {
 }
 
 .menu-hidden {
-  display: none;
+  display: none !important;
 }
 
 #mobile-menu {
@@ -434,6 +394,13 @@ html {
   width: 100%;
   height: 100vh;
   padding: 108px 0;
+}
+
+.float-window ul {
+  list-style: none;
+  width: 80%;
+  justify-content: space-between;
+  padding: 0;
 }
 
 #mobile-menu ul {
@@ -462,6 +429,92 @@ html {
 .menu-item a {
   text-decoration: none;
   color: #fff5e1;
+}
+
+.pop-up-main {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px) brightness(50%);
+  -webkit-backdrop-filter: blur(2px) brightness(50%);
+  padding-top: 250px;
+  overflow-y: scroll;
+}
+
+.float-window {
+  width: 80%;
+  background-color: #fff;
+  flex-direction: column;
+  position: relative;
+  padding: 24px 4px;
+  padding-left: 16px;
+  margin-bottom: 30px;
+}
+
+.float-window h2 {
+  color: #172b4d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.close-pop-up {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.second-div-pop-up {
+  flex-direction: column;
+}
+
+.second-div-pop-up img {
+  max-width: 95%;
+  height: auto;
+}
+
+.third-div-pop-up {
+  flex-direction: column;
+}
+
+.third-div-pop-up p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+  margin-right: 16px;
+}
+
+#img-button-1 {
+  width: 134px;
+  text-decoration: none;
+  background-image: url(images/IconLive.png);
+  background-repeat: no-repeat;
+  background-position-x: 102px;
+  background-position-y: center;
+  padding-left: 12px;
+  text-align: left;
+}
+
+#img-button-2 {
+  width: 160px;
+  text-decoration: none;
+  background-image: url(images/IconGithubWhite.png);
+  background-repeat: no-repeat;
+  background-position-x: 126px;
+  background-position-y: center;
+  padding-left: 12px;
+  text-align: left;
+}
+
+.img-button-2:hover {
+  background-image: url(images/IconGitHubBottom.png);
 }
 
 @media (min-width: 1024px) {
@@ -547,92 +600,82 @@ html {
   }
 
   .grid {
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  .grid1 {
+  .work-title {
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     font-size: 40px;
     width: 100%;
-    grid-column: 1 / span 3;
-    color: #091e42;
-    height: 25%;
   }
 
-  .grid1 img {
-    width: 794px;
+  .work-title img {
+    width: 70%;
     margin-left: 24px;
   }
 
-  .grid2 {
-    flex-direction: row;
-    grid-column: 1 / span 3;
-    justify-content: left;
-    margin-bottom: 24px;
-  }
-
-  .yogaImage {
-    width: 684px;
-    height: 448px;
-    margin-right: 24px;
-  }
-
-  .yogaInfo h2 {
-    margin-top: 0;
-  }
-
-  .imgBckGrnd1 {
-    background-image: url('images/imgGrid1.png');
-    background-repeat: no-repeat;
-    background-size: 369px 435px;
-  }
-
-  .imgBckGrnd1 h2 {
+  .buttonProperties {
+    width: 100%;
     visibility: hidden;
-  }
-
-  .imgBckGrnd1 p {
-    visibility: hidden;
-  }
-
-  .imgBckGrnd1 ul {
-    visibility: hidden;
-  }
-
-  .imgBckGrnd1 div input {
-    visibility: visible;
-  }
-
-  .alingButton {
-    width: 369px !important;
-    margin-bottom: 0;
   }
 
   .grid3 div {
     visibility: hidden;
   }
 
-  .imgBckGrnd2 {
-    background-image: url('images/imgGrid2.png');
+  .grid3:hover {
+    background-image: url('images/imgGrid1.png');
     background-repeat: no-repeat;
-    background-size: 369px 435px;
   }
 
-  .imgBckGrnd3 {
-    background-image: url('images/imgGrid3.png');
-    background-repeat: no-repeat;
-    background-size: 369px 435px;
+  .bottom p {
+    color: #f4f5f7;
+    font-size: 20px;
+    margin-bottom: 24px;
+    margin-top: 0;
   }
 
-  .imgBckGrnd4 {
-    background-image: url('images/imgGrid4.png');
-    background-repeat: no-repeat;
-    background-size: 369px 435px;
+  .skills div {
+    flex-direction: row;
+  }
+
+  .footer p {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    width: 455px;
+    height: 256px;
+    flex-basis: 40%;
+  }
+
+  .sBottomNav ul {
+    flex-direction: row;
+  }
+
+  .float-window ul {
+    width: 20%;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .third-div-pop-up p {
+    line-height: 30px;
+    margin-top: 0;
+  }
+
+  .grid3:hover h2,
+  .grid3:hover p,
+  .grid3:hover ul {
+    visibility: hidden;
+  }
+
+  .grid3:hover .buttonProperties {
+    visibility: visible;
   }
 
   .aboutMe {
@@ -650,23 +693,12 @@ html {
     visibility: visible;
   }
 
-  .bottom p {
-    color: #f4f5f7;
-    font-size: 20px;
-    margin-bottom: 24px;
-    margin-top: 0;
-  }
-
   .line2 {
     margin-top: 209px;
     margin-bottom: 16px;
     margin-left: 142px;
     width: 1156px;
     height: 1px;
-  }
-
-  .skills div {
-    flex-direction: row;
   }
 
   .language {
@@ -681,15 +713,6 @@ html {
     margin-bottom: 0;
   }
 
-  .footer p {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 52px;
-    width: 455px;
-    height: 256px;
-    flex-basis: 40%;
-  }
-
   .form {
     flex-basis: 60%;
   }
@@ -699,11 +722,36 @@ html {
     margin-left: 12px;
   }
 
-  .sBottomNav ul {
+  .sBottomNav {
+    justify-content: center;
+  }
+
+  .pop-up-main {
+    padding-top: 0;
+  }
+
+  .close-pop-up {
+    top: 38px;
+    right: 38px;
+  }
+
+  .close-pop-up:hover {
+    cursor: pointer;
+  }
+
+  .second-div-pop-up {
     flex-direction: row;
   }
 
-  .sBottomNav {
-    justify-content: center;
+  .second-div-pop-up img {
+    width: 660px;
+    height: 448px;
+  }
+
+  .third-div-pop-up {
+    padding-left: 25px;
+    margin-top: 0;
+    justify-content: space-between;
+    padding-bottom: 30px;
   }
 }
