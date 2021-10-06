@@ -126,24 +126,22 @@ html {
   border: 0;
 }
 
-.alingButton {
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
+.work-title {
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  color: #091e42;
+  height: 25%;
+  margin-top: 120px;
   margin-bottom: 24px;
+  flex-direction: column;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 24px;
-}
-
-.gridItem {
+  grid-template-columns: 100%;
   width: 100%;
-  max-width: 450px;
-  flex-direction: column;
-  align-items: flex-start;
+  grid-gap: 24px;
+  justify-items: center;
 }
 
 .backGroundImg {
@@ -152,53 +150,11 @@ html {
   background-size: cover;
 }
 
-.grid1 {
-  font-family: 'Crete Round', serif;
-  font-size: 40px;
-  margin-top: 120px;
-  margin-bottom: 24px;
-}
-
-.grid2 {
-  flex-direction: column;
-}
-
-.yogaInfo {
-  flex-direction: column;
-}
-
-.yogaImage {
-  width: 327px;
-  height: 237px;
-}
-
-.yogaInfo h2 {
-  font-family: 'Crete Round', serif;
-  font-size: 32px;
-  margin-top: 24px;
-  margin-bottom: 0%;
-  color: #091e42;
-}
-
-.yogaInfo p {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-top: 12px;
-  margin-bottom: 0%;
-  color: #091e42;
-}
-
-.yogaInfo ul {
-  width: 297px;
-  list-style: none;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-right: 12px;
-  padding-left: 0%;
-  justify-content: space-between;
-  align-items: flex-start;
+.grid3 {
+  position: relative;
+  width: 350px;
+  height: auto;
+  padding-bottom: 50px;
 }
 
 .grid3 h2 {
@@ -207,10 +163,10 @@ html {
   line-height: 44px;
   font-weight: 400;
   color: #fff;
-  margin-top: 84px;
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 0%;
+  height: 70px;
 }
 
 .grid3 p {
@@ -237,8 +193,10 @@ html {
 }
 
 .buttonProperties {
-  width: 327px;
-  height: 48px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
 }
 
 .aboutMe {
@@ -474,17 +432,16 @@ html {
 }
 
 .pop-up-main {
-  /* display: none; */
   width: 100%;
-  height: 100vh;
   position: fixed;
   top: 0;
   bottom: 0;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(2px) brightness(50%);
-  padding-top: 50px;
-  overflow-y: auto;
+  -webkit-backdrop-filter: blur(2px) brightness(50%);
+  padding-top: 250px;
+  overflow-y: scroll;
 }
 
 .float-window {
@@ -643,57 +600,24 @@ html {
   }
 
   .grid {
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  .grid1 {
+  .work-title {
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     font-size: 40px;
     width: 100%;
-    color: #091e42;
-    height: 25%;
-    grid-column: 1 / span 3;
+    
   }
 
-  .grid1 img {
+  .work-title img {
     width: 70%;
     margin-left: 24px;
-  }
-
-  .grid2 {
-    flex-direction: row;
-    width: 100%;
-    justify-content: left;
-    margin-bottom: 24px;
-    grid-column: 1 / span 3;
-    align-items: flex-start;
-  }
-
-  .yogaImage {
-    width: 684px;
-    height: 448px;
-    margin-right: 24px;
-  }
-
-  .yogaInfo {
-    width: 100%;
-  }
-
-  .yogaInfo p {
-    width: 60%;
-  }
-
-  .yogaInfo h2 {
-    margin-top: 0;
-  }
-
-  .alingButton {
-    width: 100%;
-    margin-bottom: 0;
   }
 
   .buttonProperties {
@@ -701,6 +625,10 @@ html {
   }
 
   .grid3 div {
+    visibility: hidden;
+  }
+
+  .buttonProperties {
     visibility: hidden;
   }
 
@@ -749,10 +677,8 @@ html {
     visibility: hidden;
   }
 
-  .grid3:hover div {
+  .grid3:hover .buttonProperties {
     visibility: visible;
-    position: relative;
-    bottom: 0;
   }
 
   .aboutMe {
@@ -803,9 +729,17 @@ html {
     justify-content: center;
   }
 
+  .pop-up-main {
+    padding-top: 0;
+  }
+
   .close-pop-up {
     top: 38px;
     right: 38px;
+  }
+
+  .close-pop-up:hover {
+    cursor: pointer;
   }
 
   .second-div-pop-up {
@@ -821,5 +755,10 @@ html {
     padding-left: 25px;
     margin-top: 0;
     justify-content: space-between;
+    padding-bottom: 30px;
+  }
+
+  .third-div-pop-up p {
+    margin-top: 0;
   }
 }
