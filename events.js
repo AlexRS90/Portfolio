@@ -39,7 +39,7 @@ for (let i = 0; i <= 1; i += 1) {
 
 const mobileBurger = document.querySelectorAll('.burger');
 const mobileMenu = document.querySelector('#mobile-menu');
-let menuItem = document.querySelectorAll('.menu-item');
+const menuItem = document.querySelectorAll('.menu-item');
 const popupToggle = document.querySelectorAll('.buttonProperties');
 const popupWindow = document.querySelector('.pop-up-main');
 const popupCloser = document.querySelector('.close-pop-up');
@@ -82,7 +82,7 @@ popupCloser.addEventListener('click', popupVisibility);
 popupToggle.forEach((item) => item.addEventListener('click', popupVisibility));
 popupOpener.addEventListener('click', popupVisibility);
 
-window.addEventListener('keydown', function (event) {
+window.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && (popupWindow.classList.contains('menu-hidden') === false)) {
     popupWindow.classList.add('menu-hidden');
   }

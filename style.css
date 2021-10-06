@@ -743,8 +743,8 @@ html {
     line-height: 30px;
   }
 
-  .grid3:hover h2, 
-  .grid3:hover p, 
+  .grid3:hover h2,
+  .grid3:hover p,
   .grid3:hover ul {
     visibility: hidden;
   }
@@ -802,16 +802,16 @@ html {
   .sBottomNav {
     justify-content: center;
   }
-  
+
   .close-pop-up {
     top: 38px;
     right: 38px;
   }
-  
+
   .second-div-pop-up {
-    flex-direction: row; 
+    flex-direction: row;
   }
-  
+
   .second-div-pop-up img {
     width: 660px;
     height: 448px;
