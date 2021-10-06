@@ -135,19 +135,21 @@ html {
 
 .grid {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: repeat(3,1fr);
   grid-gap: 24px;
 }
 
 .gridItem {
+  width: 100%;
+  max-width: 450px;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 24px;
 }
 
 .backGroundImg {
   background-image: url('images/imgworks.png');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grid1 {
@@ -532,8 +534,9 @@ html {
   margin-right: 16px;
 }
 
-.img-button-1 {
+#img-button-1 {
   width: 134px;
+  text-decoration: none;
   background-image: url(images/IconLive.png);
   background-repeat: no-repeat;
   background-position-x: 102px;
@@ -542,8 +545,9 @@ html {
   text-align: left;
 }
 
-.img-button-2 {
+#img-button-2 {
   width: 160px;
+  text-decoration: none;
   background-image: url(images/IconGithubWhite.png);
   background-repeat: no-repeat;
   background-position-x: 126px;
@@ -639,7 +643,6 @@ html {
   }
 
   .grid {
-    grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     margin-left: 5%;
     margin-right: 5%;
@@ -651,9 +654,9 @@ html {
     align-items: center;
     font-size: 40px;
     width: 100%;
-    grid-column: 1 / span 3;
     color: #091e42;
     height: 25%;
+    grid-column: 1 / span 3;
   }
 
   .grid1 img {
@@ -663,15 +666,25 @@ html {
 
   .grid2 {
     flex-direction: row;
-    grid-column: 1 / span 3;
+    width: 100%;
     justify-content: left;
     margin-bottom: 24px;
+    grid-column: 1 / span 3;
+    align-items: flex-start;
   }
 
   .yogaImage {
     width: 684px;
     height: 448px;
     margin-right: 24px;
+  }
+
+  .yogaInfo{
+    width: 100%;
+  }
+
+  .yogaInfo p {
+    width: 60%;
   }
 
   .yogaInfo h2 {
@@ -684,7 +697,7 @@ html {
   }
 
   .buttonProperties {
-    width: 95.5%;
+    width: 100%;
   }
 
   .grid3 div {
