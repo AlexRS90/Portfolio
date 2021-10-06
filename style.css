@@ -611,8 +611,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    width: 100%;
-    
+    width: 100%; 
   }
 
   .work-title img {
@@ -622,13 +621,11 @@ html {
 
   .buttonProperties {
     width: 100%;
+    visibility: hidden;
+
   }
 
   .grid3 div {
-    visibility: hidden;
-  }
-
-  .buttonProperties {
     visibility: hidden;
   }
 
@@ -669,6 +666,7 @@ html {
 
   .third-div-pop-up p {
     line-height: 30px;
+    margin-top: 0;
   }
 
   .grid3:hover h2,
@@ -756,9 +754,5 @@ html {
     margin-top: 0;
     justify-content: space-between;
     padding-bottom: 30px;
-  }
-
-  .third-div-pop-up p {
-    margin-top: 0;
   }
 }
