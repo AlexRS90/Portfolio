@@ -1,5 +1,5 @@
-const projects = {
-  numbers: {
+const projects = [
+  {
     title: 'Number around the internet',
     img: 'images/SnapsPortfolio.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -7,7 +7,7 @@ const projects = {
     liveUrl: 'https://alexrs90.github.io/Portfolio/',
     githubUrl: 'https://www.github.com/AlexRS90/Portfolio',
   },
-  multiposts: {
+  {
     title: 'Multi-Post Stories',
     img: 'images/yogaDesktop.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -15,7 +15,7 @@ const projects = {
     liveUrl: 'https://alexrs90.github.io/Portfolio/',
     githubUrl: 'https://www.github.com/AlexRS90/Portfolio',
   },
-  greater: {
+  {
     title: 'School Web Page',
     img: 'images/SnapsPortfolio.png',
     description: 'Arrival entered an if drawing request. How daughters not promotion few knowledge contented. Yet winter law behind number stairs garret excuse. Minuter we natural conduct gravity if pointed oh no. Am immediate unwilling of attempted admitting disposing it. Handsome opinions on am at it ladyship. ',
@@ -23,7 +23,7 @@ const projects = {
     liveUrl: 'https://alexrs90.github.io/Portfolio/',
     githubUrl: 'https://www.github.com/AlexRS90/Portfolio',
   },
-};
+];
 
 for (let i = 0; i <= 1; i += 1) {
   let cards = '';
@@ -69,11 +69,11 @@ function hydrate(project) {
 
 function popupVisibility(evt) {
   if (evt.currentTarget.classList.contains('project-1')) {
-    hydrate('numbers');
+    hydrate(0);
   } else if (evt.currentTarget.classList.contains('project-2')) {
-    hydrate('greater');
+    hydrate(1);
   } else if (evt.currentTarget.classList.contains('project-3')) {
-    hydrate('multiposts');
+    hydrate(2);
   }
   popupWindow.classList.toggle('menu-hidden');
 }
