@@ -365,6 +365,13 @@ html {
   margin-bottom: 124px;
 }
 
+.errors {
+  color: #f00;
+  margin-top: 12px;
+  list-style: disc;
+  font-family: 'Poppins', sans-serif;
+}
+
 .bottomNav {
   height: 72px;
   justify-content: center;
