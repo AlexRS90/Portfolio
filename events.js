@@ -104,7 +104,7 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
-//Data storage section
+// Data storage section
 
 const userName = document.querySelector('#full-name');
 const userMessage = document.querySelector('#message');
@@ -112,10 +112,10 @@ const userMessage = document.querySelector('#message');
 let userInfo = {
   formName: userName.value,
   formeMail: email.value,
-  formMessage: userMessage.value
+  formMessage: userMessage.value,
 };
 
-if(window.localStorage.getItem('userInfo')) {
+if (window.localStorage.getItem('userInfo')) {
   userInfo = JSON.parse(window.localStorage.getItem('userInfo'));
   userName.value = userInfo.formName;
   email.value = userInfo.formeMail;
