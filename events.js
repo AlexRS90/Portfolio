@@ -103,3 +103,21 @@ window.addEventListener('keydown', (event) => {
     popupWindow.classList.add('menu-hidden');
   }
 });
+
+//Data storage section
+
+const userName = document.querySelector('#full-name');
+const userMessage = document.querySelector('#message');
+
+const userInfo = {
+  formName: userName.value,
+  formeMail: email.value,
+  formMessage: userMessage.value
+};
+
+window.addEventListener('keyup', () => {
+  userInfo.formName = userName.value;
+  userInfo.formeMail = email.value;
+  userInfo.formMessage = userMessage.value;
+  window.localStorage.setItem('userInfo', JSON.stringify(userInfo));
+});
