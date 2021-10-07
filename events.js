@@ -109,11 +109,18 @@ window.addEventListener('keydown', (event) => {
 const userName = document.querySelector('#full-name');
 const userMessage = document.querySelector('#message');
 
-const userInfo = {
+let userInfo = {
   formName: userName.value,
   formeMail: email.value,
   formMessage: userMessage.value
 };
+
+if(window.localStorage.getItem('userInfo')) {
+  userInfo = JSON.parse(window.localStorage.getItem('userInfo'));
+  userName.value = userInfo.formName;
+  email.value = userInfo.formeMail;
+  userMessage.value = userInfo.formMessage;
+}
 
 window.addEventListener('keyup', () => {
   userInfo.formName = userName.value;
