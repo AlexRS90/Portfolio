@@ -11,6 +11,7 @@
 - For fourth milestone I create the desktop version frome the same code, making it responsive. 
 - For this milestone I added the mobile menu, it works properly and takes you to the selected section.
 - For this milestone I added the pop up windows for all cards, even the cards are created dynamically.
+- For this milestone we added a local storage event and show the information when it exists.
 
 ## Built With
 

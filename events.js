@@ -103,3 +103,28 @@ window.addEventListener('keydown', (event) => {
     popupWindow.classList.add('menu-hidden');
   }
 });
+
+// Data storage section
+
+const userName = document.querySelector('#full-name');
+const userMessage = document.querySelector('#message');
+
+let userInfo = {
+  formName: userName.value,
+  formeMail: email.value,
+  formMessage: userMessage.value,
+};
+
+if (window.localStorage.getItem('userInfo')) {
+  userInfo = JSON.parse(window.localStorage.getItem('userInfo'));
+  userName.value = userInfo.formName;
+  email.value = userInfo.formeMail;
+  userMessage.value = userInfo.formMessage;
+}
+
+window.addEventListener('keyup', () => {
+  userInfo.formName = userName.value;
+  userInfo.formeMail = email.value;
+  userInfo.formMessage = userMessage.value;
+  window.localStorage.setItem('userInfo', JSON.stringify(userInfo));
+});
