@@ -42,7 +42,7 @@ const menuItem = document.querySelectorAll('.menu-item');
 const popupToggle = document.querySelectorAll('.buttonProperties');
 const popupWindow = document.querySelector('.pop-up-main');
 const popupCloser = document.querySelector('.close-pop-up');
-const popupTitle = document.querySelector('.pop-up-title');
+const popupTitle = document.querySelector('.pop-up-titl');
 const popupText = document.querySelector('.pop-up-text');
 
 function check() {
