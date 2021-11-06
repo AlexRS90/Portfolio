@@ -1,3 +1,8 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
 .d-flex {
   display: flex;
 }
@@ -144,7 +149,20 @@ html {
   justify-items: center;
 }
 
-.backGroundImg {
+.backGroundImg1 {
+  background: rgba(28, 27, 26, 0.8) url('images/thumbnileMobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.backGroundImg2 {
+  background-image: url('images/imgworks.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backGroundImg3 {
   background-image: url('images/imgworks.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,7 +180,7 @@ html {
   font-size: 32px;
   line-height: 44px;
   font-weight: 400;
-  color: #fff;
+  color: #ff6b00;
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 0%;
