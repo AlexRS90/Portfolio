@@ -1,14 +1,16 @@
 const projects = [{
-  title: 'Number around the internet',
-  img: 'images/SnapsPortfolio.png',
-  description: 'Man request adapted spirits set pressed. Up to denoting subjects sensible feelings it indulged directly. We dwelling elegance do shutters appetite yourself diverted. Our next drew much you with rank. Tore many held age hold rose than our. She literature sentiments any contrasted. Set aware joy sense young now tears china shy.',
-  listOfTechnologies: ['HTML', 'Bootstrap', 'Ruby'],
-  liveUrl: 'https://alexrs90.github.io/Portfolio/',
-  githubUrl: 'https://www.github.com/AlexRS90/Portfolio',
+  title: 'Rasa Running',
+  img: 'images/thumbnailRaces.png',
+  resume: 'Here you can find inspiration to start to run, one of my dreams is to earn the six-star marathon major medal, and on this web page, I will tell you my journey.',
+  description: 'One of my dreams is to earn the six-star marathon major medal, here you can look at my journey to do it and if I can inspire at least one person to join this amazing running world I will be happy.',
+  listOfTechnologies: ['HTML', 'CSS', 'JavaScript'],
+  liveUrl: 'https://alexrs90.github.io/personalBrand-capstone1/',
+  githubUrl: 'https://github.com/AlexRS90/personalBrand-capstone1',
 },
 {
   title: 'Multi-Post Stories',
   img: 'images/yogaDesktop.png',
+  resume: 'A daily selection of privately<br> personalized reads; no accounts or<br> sign-ups required. has been the<br> industry',
   description: 'Up maids me an ample stood given. Certainty say suffering his him collected intention promotion. Hill sold ham men made lose case. Views abode law heard jokes too. Was are delightful solicitude discovered collecting man day. Resolving neglected sir tolerably but existence conveying for. Day his put off unaffected literature partiality inhabiting.',
   listOfTechnologies: ['HTML', 'Bootstrap', 'Ruby'],
   liveUrl: 'https://alexrs90.github.io/Portfolio/',
@@ -17,6 +19,7 @@ const projects = [{
 {
   title: 'School Web Page',
   img: 'images/thumpnailTemplate.png',
+  resume: 'A daily selection of privately<br> personalized reads; no accounts or<br> sign-ups required. has been the<br> industry',
   description: 'Arrival entered an if drawing request. How daughters not promotion few knowledge contented. Yet winter law behind number stairs garret excuse. Minuter we natural conduct gravity if pointed oh no. Am immediate unwilling of attempted admitting disposing it. Handsome opinions on am at it ladyship. ',
   listOfTechnologies: ['HTML', 'Bootstrap', 'Ruby'],
   liveUrl: 'https://alexrs90.github.io/Portfolio/',
@@ -28,7 +31,7 @@ for (let i = 0; i <= 1; i += 1) {
   let cards = '';
   let index = 1;
   Object.keys(projects).forEach((project) => {
-    cards += `<div class="gridItem grid3 backGroundImg"><h2>${projects[project].title}</h2><p>A daily selection of privately<br> personalized reads; no accounts or<br> sign-ups required. has been the<br> industry's standard</p><ul class="d-flex"> <li><a href="#"> <img src="images/htmlTransparent.png" alt="htmlButton" class="buttonPropertiesWorks"></a></li><li><a href="#"> <img src="images/bootstrapTransparent.png" alt="bootstrapButton" class="buttonPropertiesWorks"></a></li><li><a href="#"><img src="images/rubyTransparent.png" alt="rubyButton" class="buttonPropertiesWorks"></a> </li> </ul><input class="btnPrimary buttonProperties project-${index}" type="button" value="See Project"></div>`;
+    cards += `<div class="gridItem grid3 backGroundImg${index}"><h2>${projects[project].title}</h2><p>${projects[project].resume}</p><ul class="d-flex"> <li><a href="#"> <img src="images/htmlTransparent.png" alt="htmlButton" class="buttonPropertiesWorks"></a></li><li><a href="#"> <img src="images/bootstrapTransparent.png" alt="bootstrapButton" class="buttonPropertiesWorks"></a></li><li><a href="#"><img src="images/rubyTransparent.png" alt="rubyButton" class="buttonPropertiesWorks"></a> </li> </ul><input class="btnPrimary buttonProperties project-${index}" type="button" value="See Project"></div>`;
     index += 1;
   });
   document.querySelector('#works-section').innerHTML += cards;
